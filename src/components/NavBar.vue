@@ -25,7 +25,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
   <header class="navbar" :class="{ 'navbar--scrolled': scrolled }">
     <div class="container navbar__inner">
       <RouterLink to="/" class="navbar__logo" @click="closeMenu">
-        <span class="navbar__logo-mark">ES</span>
+        <img src="/logo-mark.svg" alt="Espejel Studio" class="navbar__logo-mark" width="28" height="30" />
         <span class="navbar__logo-text">Espejel Studio</span>
       </RouterLink>
 
@@ -80,18 +80,10 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 }
 
 .navbar__logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
+  width: 28px;
   height: 30px;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  border-radius: var(--radius-sm);
   flex-shrink: 0;
+  display: block;
 }
 
 .navbar__nav {

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 115" fill="none">
+  <defs>
+    <linearGradient id="greenGrad" x1="55" y1="3" x2="55" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c2f7d5"/>
+      <stop offset="1" stop-color="#28c264"/>
+    </linearGradient>
+    <clipPath id="hexClip">
+      <polygon points="55,3 104,30 104,84 55,111 6,84 6,30"/>
+    </clipPath>
+  </defs>
+
+  <!-- White base (negative space between stripes shows as white) -->
+  <polygon points="55,3 104,30 104,84 55,111 6,84 6,30" fill="white"/>
+
+  <!-- Diagonal stripes clipped to hexagon, rotated as a group -->
+  <g clip-path="url(#hexClip)">
+    <g transform="rotate(-35 55 57)">
+      <!-- Green stripes (upper S portion) -->
+      <rect x="-110" y="12"  width="330" height="13" fill="url(#greenGrad)"/>
+      <rect x="-110" y="29"  width="330" height="13" fill="url(#greenGrad)"/>
+      <rect x="-110" y="46"  width="330" height="13" fill="url(#greenGrad)"/>
+      <!-- Dark stripes (lower S portion) -->
+      <rect x="-110" y="63"  width="330" height="13" fill="#131313"/>
+      <rect x="-110" y="80"  width="330" height="13" fill="#131313"/>
+      <rect x="-110" y="97"  width="330" height="13" fill="#131313"/>
+    </g>
+  </g>
+</svg>

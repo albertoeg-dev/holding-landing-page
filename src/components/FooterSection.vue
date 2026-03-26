@@ -9,7 +9,7 @@ const currentYear = new Date().getFullYear()
     <div class="container footer__inner">
       <div class="footer__brand">
         <div class="footer__logo">
-          <span class="footer__logo-mark">ES</span>
+          <img src="/logo-mark-white.svg" alt="Espejel Studio" class="footer__logo-mark" width="26" height="28" />
           <span class="footer__logo-text">Espejel Studio</span>
         </div>
         <p class="footer__tagline">
@@ -88,18 +88,10 @@ const currentYear = new Date().getFullYear()
 }
 
 .footer__logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
+  width: 26px;
   height: 28px;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  border-radius: var(--radius-sm);
   flex-shrink: 0;
+  display: block;
 }
 
 .footer__tagline {

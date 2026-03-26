@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 115" fill="none">
+  <defs>
+    <linearGradient id="greenGradW" x1="55" y1="3" x2="55" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c2f7d5"/>
+      <stop offset="1" stop-color="#28c264"/>
+    </linearGradient>
+    <clipPath id="hexClipW">
+      <polygon points="55,3 104,30 104,84 55,111 6,84 6,30"/>
+    </clipPath>
+  </defs>
+
+  <!-- Dark base for footer context -->
+  <polygon points="55,3 104,30 104,84 55,111 6,84 6,30" fill="#0a0a0a"/>
+
+  <g clip-path="url(#hexClipW)">
+    <g transform="rotate(-35 55 57)">
+      <!-- Green stripes -->
+      <rect x="-110" y="12"  width="330" height="13" fill="url(#greenGradW)"/>
+      <rect x="-110" y="29"  width="330" height="13" fill="url(#greenGradW)"/>
+      <rect x="-110" y="46"  width="330" height="13" fill="url(#greenGradW)"/>
+      <!-- White stripes (visible on dark footer) -->
+      <rect x="-110" y="63"  width="330" height="13" fill="rgba(255,255,255,0.85)"/>
+      <rect x="-110" y="80"  width="330" height="13" fill="rgba(255,255,255,0.85)"/>
+      <rect x="-110" y="97"  width="330" height="13" fill="rgba(255,255,255,0.85)"/>
+    </g>
+  </g>
+</svg>
