@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c2f7d5"/>
+      <stop offset="100%" stop-color="#28c264"/>
+    </linearGradient>
+    <clipPath id="fhex">
+      <polygon points="16,1 29.5,8.5 29.5,23.5 16,31 2.5,23.5 2.5,8.5"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fondo oscuro cuadrado con bordes ligeramente redondeados -->
+  <rect width="32" height="32" rx="6" fill="#111111"/>
+
+  <!-- Marca hexagonal centrada -->
+  <g clip-path="url(#fhex)">
+    <!-- Base blanca (espacios negativos entre las rayas) -->
+    <polygon points="16,1 29.5,8.5 29.5,23.5 16,31 2.5,23.5 2.5,8.5" fill="white"/>
+
+    <!-- Rayas diagonales -->
+    <g transform="rotate(-35 16 16)">
+      <!-- Rayas verdes (mitad superior S) -->
+      <rect x="-20" y="3"  width="72" height="4" fill="url(#fg)"/>
+      <rect x="-20" y="9"  width="72" height="4" fill="url(#fg)"/>
+      <rect x="-20" y="15" width="72" height="4" fill="url(#fg)"/>
+      <!-- Rayas oscuras (mitad inferior S) -->
+      <rect x="-20" y="21" width="72" height="4" fill="#131313"/>
+      <rect x="-20" y="27" width="72" height="4" fill="#131313"/>
+      <rect x="-20" y="33" width="72" height="4" fill="#131313"/>
+    </g>
+  </g>
+</svg>
