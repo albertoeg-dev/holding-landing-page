@@ -181,7 +181,7 @@ function handleSubmit() {
 
 .contact__input {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 16px; /* 16px mínimo evita el zoom automático en iOS */
   color: var(--color-black);
   background-color: var(--color-white);
   border: 1.5px solid var(--color-gray-200);

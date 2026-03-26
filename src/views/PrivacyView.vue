@@ -320,4 +320,42 @@ const lastUpdated = '26 de marzo de 2026'
 .legal-address a {
   color: var(--color-black);
 }
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 48px 0 72px;
+  }
+
+  .legal-page__header {
+    margin-bottom: 40px;
+  }
+
+  .legal-page__body {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-page {
+    padding: 36px 0 56px;
+  }
+
+  .legal-page__header {
+    margin-bottom: 28px;
+  }
+
+  .legal-page__body {
+    gap: 24px;
+  }
+
+  .legal-section h2 {
+    font-size: 15px;
+  }
+
+  .legal-section p,
+  .legal-section ul li {
+    font-size: 14px;
+  }
+}
 </style>
